@@ -1,3 +1,4 @@
+/* ------------------------------- GENERAL ------------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +13,8 @@ html{
     scroll-behavior: smooth;
 }
 
-.container{
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
 
+/* ------------------------------- HEADER ------------------------------- */
 .header{
     background-image: linear-gradient(to top, rgba(9, 32, 63, 0.7) 0%, rgba(83, 120, 149, 0.7) 100%), url(../img/header3.jpg);
     background-repeat: no-repeat;
@@ -30,17 +27,22 @@ html{
     padding: 0.1px;
     position: relative;
     margin-bottom: 50px;
-    /* width: 100%; */
 }
 
-.menu{
+.header .container{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header .container .menu{
     margin-top: 35px;
     /* background-color: rgb(52, 90, 16); */
     display: flex;
     justify-content: flex-end;
 }
 
-.menu a{
+.header .container .menu a{
     margin-right: 35px;
     text-decoration: none;
     color: #fff;
@@ -48,43 +50,47 @@ html{
     font-weight: 300;
 }
 
-.menu a:hover{
+.header .container .menu a:hover{
     text-decoration: underline;
 }
 
-.contenedor-textos{
+.header .container .contenedor-textos{
     margin-top: 200px;
     color: #fff;
 }
 
-.contenedor-textos .title{
+.header .container .contenedor-textos .title{
     font-size: 80px;
     font-weight: 700;
     color:  #00acee;
 }
 
-.contenedor-textos .title span{
+.header .container .contenedor-textos .title span{
     font-weight: 300;
     color: white;
 }
 
-.contenedor-textos p{
+.header .container .contenedor-textos p{
     font-size: 30px;
 }
-.header .wave{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
 
-.cajaBtnsContactos{
+.header .container  .cajaBtnsContactos{
     margin-top: 15px;
     margin-top: 45px;
-    /* border: 1px solid red; */
 }
 
-.cajitaBtnsContactos{
+.header .container  .cajaBtnsContactos .titulo h2{
+    font-size: 1.5rem;
+    color: #00acee;
+    text-decoration: underline;
+}
+
+.header .container  .cajaBtnsDirecta{
+    display: flex;
+    flex-direction: row;
+}
+
+.header .container  .cajaBtnsContactos .cajaBtnsDirecta .cajitaBtnsContactos{
     display: flex;
     /* border: 1px solid red; */
     flex-direction: column;
@@ -92,30 +98,19 @@ html{
     align-items: center;
     margin-right: 25px;
     text-align: center;
-
-}
-.cajaBtnsContactos .titulo h2{
-    font-size: 1.5rem;
-    color: #00acee;
-    text-decoration: underline;
 }
 
-.cajaBtnsDirecta{
-    display: flex;
-    flex-direction: row;
-}
-
-.cajaBtnsContactos a{
+.header .container .cajaBtnsContactos .cajaBtnsDirecta a{
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.cajaBtnsContactos a:hover{
+.header .container     .cajaBtnsContactos .cajaBtnsDirecta a:hover{
     text-decoration: underline #00acee; 
 }
 
-.cajaBtnsContactos i{
+.header .container     .cajaBtnsContactos .cajaBtnsDirecta i{
     font-size: 2.5rem;
     /* margin-right: 15px; */
     color: #fff;
@@ -124,7 +119,7 @@ html{
     /* border-radius: 5px; */
 }
 
-.cajaBtnsContactos i:hover{
+.header .container   .cajaBtnsContactos .cajaBtnsDirecta i:hover{
     
     border: 1px solid #00acee;
     color: #15de69;
@@ -143,6 +138,13 @@ html{
         border: 1px solid #fff;
         color: #00acee;
     }
+}
+
+.header .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /*  Main  */
