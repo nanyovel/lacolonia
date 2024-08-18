@@ -147,31 +147,31 @@ html{
     width: 100%;
 }
 
-/*  Main  */
-
-.main .img{
-    width: 50%;
-}
-
-.container-acerca-de {
+/* ------------------------------- MAIN ------------------------------- */
+/* acerda de */
+.main .acerca-de .container-acerca-de {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 50px;
     width: 100%;
 }
+.main .acerca-de .container-acerca-de .img{
+    width: 50%;
+}
 
-.acerca-de h2{
+.main .acerca-de .container-acerca-de .acerca-de h2{
     margin-bottom: 20px;
     color:  #00acee;
     font-size: 2.8rem;
 }
 
-.acerca-de .textos{
+.main .acerca-de .textos{
     width: 400px;
 }
 
-.galeria{
+/* Galeria */
+.main .galeria{
     width: 100%;
     height: 700px;
     padding-top: 100px;
@@ -179,7 +179,7 @@ html{
     margin-bottom: 100px;
 }
 
-.galeria-container{
+.main .galeria .galeria-container{
     display: grid;
     width: 90%;
     height: 500px;
@@ -190,7 +190,7 @@ html{
     "primera primera cuarta quinta";
 }
 
-.galeria .caja-img{
+.main .galeria .galeria-container .caja-img{
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -199,7 +199,7 @@ html{
     -moz-box-shadow: 4px 6px 9px -3px rgba(0,0,0,0.75);
 }
 
-.galeria .hover{
+.main .galeria .galeria-container .caja-img .hover{
     color: #fff;
     text-align: center;
     display: flex;
@@ -218,60 +218,60 @@ html{
     transition: transform ease-in-out 0.3s;
 }
 
-.galeria .caja-img:hover .hover{
+.main .galeria .galeria-container .caja-img:hover .hover{
     transform: translateX(0%);
 }
 
-.galeria img{
+.main .galeria .galeria-container .caja-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-
 }
 
-.galeria-container div:nth-child(1){
+.main .galeria .galeria-container div:nth-child(1){
     grid-area: primera;
 }
 
-.galeria-container div:nth-child(2){
+.main .galeria .galeria-container div:nth-child(2){
     grid-area: segunda;
 }
 
-.galeria-container div:nth-child(3){
+.main .galeria .galeria-container div:nth-child(3){
     grid-area: tercera;
 }
 
-.galeria-container div:nth-child(4){
+.main .galeria .galeria-container div:nth-child(4){
     grid-area: cuarta;
 }
 
-.galeria-container div:nth-child(5){
+.main .galeria .galeria-container div:nth-child(5){
     grid-area: quinta;
 
 }
 
-.galeria-container div:nth-child(3) img{
+.main .galeria .galeria-container div:nth-child(3) img{
     object-fit: cover;
     object-position: top;
 }
 
-.galeria-container div:nth-child(4) img{
+.main .galeria .galeria-container div:nth-child(4) img{
     object-fit: cover;
     object-position: top;
 }
 
-
-/*Precios*/
-
-
-.precios .contenedor-menu,
-.precios .contenedor-menu2{
+/* Precios */
+.main .precios .contenedor-menu{
+    width: 80%;
+    margin: auto;
+}
+.main .precios .contenedor-menu,
+.main .precios .contenedor-menu2{
     border: 1px solid #000;
     padding: 20px;
     overflow: hidden;
 }
 
-.corte1{
+.main .precios .container .corte1{
     width: 100%;
     border-bottom: 4px black dotted;
     margin-bottom: 10px;
@@ -283,7 +283,7 @@ html{
 
 /*Contactos*/
 
-.precios h2, .contactos h2{
+.main .precios h2, .contactos h2{
     margin-top: 50px;
     font-size: 2.8rem;
     color: #00acee;
@@ -291,13 +291,12 @@ html{
     margin-bottom: 60px;
 }
 
-
- .contactos .container{
+ .main  .contactos .container{
     display: flex;
     justify-content: space-evenly;
 }
 
-.contenedor-horario-ubicacion{
+.main .contactos .contenedor-horario-ubicacion{
     display: inline-block;
     width: 45%;
     height: 350px;
@@ -305,7 +304,7 @@ html{
     margin-bottom: 100px;
 }
 
-.contactos .direccion{
+.main .contactos .direccion{
     /* background-color: #00acee; */
     width: 100%;
     display: inline-block;
@@ -316,52 +315,50 @@ html{
     margin-bottom: 15px;
 }
 
-.contactos .direccion span{
+.main .contactos .direccion span{
     font-weight: bold;
 }
 
-.contactos h4{
+.main .contactos h4{
     text-align: center;
 }
 
-.contactos .horarios{
-    /* background-color: aqua; */
+.main .contactos .horarios{
     width: 100%;
     display: block;
     margin: 0 auto;
-
 }
 
-.contactos .entre-semana{
+.main .contactos .entre-semana{
     width: 48%;
     display: inline-block;
     text-align: left;
 }
 
-.contactos .fin-semana{
+.main .contactos .fin-semana{
     width: 48%;
     display: inline-block;
     text-align: right;
     
 }
 
-.contactos .contenedor-direccion{
+.main .contactos .contenedor-direccion{
     display: flex;
     flex-direction: column;
     /* justify-content: ; */
 }
 
-.contactos .horarios h4{
+.main .contactos .horarios h4{
     margin-bottom: 30px;
 
 }
 
-.img-contactos{
+.main .img-contactos{
     width: 45%;
     display: inline-block;
 }
 
-.img-contactos img{
+.main .img-contactos img{
     height: 350px;
     border-radius: 20px;
     box-shadow: 4px 6px 9px -3px rgba(0,0,0,0.75);
@@ -373,7 +370,7 @@ html{
 /*Opiniones*/
 
 
-.opiniones .container h2{
+.main .opiniones .container h2{
     margin-top: 50px;
     font-size: 2.8rem;
     color: #00acee;
@@ -382,20 +379,22 @@ html{
 }
 
 
-.opiniones .container .contenedor-persona{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.main .opiniones .container .contenedor-persona{
+    display: flex;
+    justify-content: center;
     gap: 40px;
+    width: 80%;
+    margin: auto;
     margin-bottom: 100px;
     margin-top: 50px;
 
 }
 
-.opiniones .opiniones-item{
+.main .opiniones .opiniones-item{
     background-color: #2698c5;
     box-shadow: 0 8px 10px rgba(65,65,65, .5);
     padding: 10px 20px;
-    width: 100%;
+    width: 80%;
     border-radius: 20px;
     height: 220px;
     display: flex;
@@ -403,14 +402,14 @@ html{
     color: white;
 }
 
-.opiniones .persona{
+.main .opiniones .persona{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.opiniones .persona img{
+.main .opiniones .persona img{
     width: 100px;
     min-width: 100px;
     height: 100px;
@@ -423,13 +422,13 @@ html{
     margin-right: 40px;
 }
 
-.opiniones h3{
+.main .opiniones h3{
     font-size: 25px;
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
-.opiniones .opiniones--subtitulo{
+.main .opiniones .opiniones--subtitulo{
     color: #ffb295;
     font-weight: 700;
 }
